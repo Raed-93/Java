@@ -1,20 +1,20 @@
-public class Test{
-    public static void main(String[] args){
+class Test {
+    public static void main(String[] args) {
+        Testclass bike = new Testclass();
+        Testclass car = new Testclass();
+        bike.setNumberOfWheels(2);
+        bike.setColor("red");
+        int bikeWheels = bike.getNumberOfWheels();
+        String bikeColor = bike.getColor();
+        car.setNumberOfWheels(4);
+        car.setColor("green");
+        int carWheels = car.getNumberOfWheels();
+        String carColor = car.getColor();
+        System.out.println("Bike object - Wheels: " + bikeWheels +
+         ", Color: " + bikeColor);
 
-        Testclass greeterApp = new Testclass();
- 
-    	// Use the variable to access Greetings methods
-    	// using dot notation.
-    
-        String dateMessage = greeterApp.getCurrentDate();
-        
-        String raed = greeterApp.greetEnglish("raed");
-        String spain = greeterApp.greetSpanish("ahmad");
-
-        System.out.println(raed);
-        System.out.println(spain);
-
-        System.out.println(dateMessage);
-
+        System.out.println("Car object - Wheels: " + carWheels + 
+        ", Color: " + carColor);
     }
 }
+

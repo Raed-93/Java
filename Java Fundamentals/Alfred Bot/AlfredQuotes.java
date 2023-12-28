@@ -7,9 +7,15 @@ public class AlfredQuotes {
         return "Hello, lovely to see you. How are you?";
     }
     
-    public String guestGreeting(String name, String x) {
-       return String.format("Hi %s,%s, placeholder for guest greeting return string",name,x);
-    //    return "placeholder for guest greeting return string";
+    public String guestGreeting(String name) {
+      
+     return "placeholder for guest greeting return string";
+      
+    }
+
+    public String guestGreeting(String name, String Dayperiod ) {
+      
+     return "Good " + name + " ," + Dayperiod +"Lovely to see you";
       
     }
     

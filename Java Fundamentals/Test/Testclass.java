@@ -1,20 +1,22 @@
-import java.util.Date;
-
-public class Testclass {
-
-    public String getCurrentDate() {
-        Date date = new Date();
-        return "Current date is: " + date;
-    }
-
-    public String greetEnglish(String name) {
-        return "Hello, " + name;
-        
+class Testclass {
+    private int numberOfWheels;
+    private String color;
+    // getter
+    public int getNumberOfWheels() {
+        return numberOfWheels;
     }
     
-    public String greetSpanish(String name) {
-        return "Hola, " + name;
-        
+    // setter
+    public void setNumberOfWheels(int number) {
+        this.numberOfWheels = number;
     }
-    
+    // getter
+    public String getColor() {
+        return color;
+    }
+    // setter
+    public void setColor(String color) {
+        this.color = color;        // 1
+    }
 }
+
