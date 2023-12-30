@@ -1,20 +1,25 @@
+import java.util.ArrayList;
 class Test {
     public static void main(String[] args) {
-        Testclass bike = new Testclass();
-        Testclass car = new Testclass();
-        bike.setNumberOfWheels(2);
-        bike.setColor("red");
-        int bikeWheels = bike.getNumberOfWheels();
-        String bikeColor = bike.getColor();
-        car.setNumberOfWheels(4);
-        car.setColor("green");
-        int carWheels = car.getNumberOfWheels();
-        String carColor = car.getColor();
-        System.out.println("Bike object - Wheels: " + bikeWheels +
-         ", Color: " + bikeColor);
-
-        System.out.println("Car object - Wheels: " + carWheels + 
-        ", Color: " + carColor);
-    }
+        ArrayList<String> snacks = new ArrayList<String> ();
+        snacks.add("Apples");
+        snacks.add("Almonds");
+        snacks.add("Pretzels");
+        snacks.add("Yogurt");
+for(int i =0; i < snacks.size(); i++) {
+	if(snacks.get(i).charAt(0) == 'A') {
+		snacks.remove(i);
+        i--;
+	}
 }
+System.out.println(snacks);
+// Running this code would produce the following error:
+// Exception in thread "main" java.util.ConcurrentModificationException
+
+
+       }
+   
+   
+    }
+
 
