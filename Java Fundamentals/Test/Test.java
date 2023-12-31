@@ -1,25 +1,28 @@
-import java.util.ArrayList;
+// import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
 class Test {
     public static void main(String[] args) {
-        ArrayList<String> snacks = new ArrayList<String> ();
-        snacks.add("Apples");
-        snacks.add("Almonds");
-        snacks.add("Pretzels");
-        snacks.add("Yogurt");
-for(int i =0; i < snacks.size(); i++) {
-	if(snacks.get(i).charAt(0) == 'A') {
-		snacks.remove(i);
-        i--;
-	}
-}
-System.out.println(snacks);
-// Running this code would produce the following error:
-// Exception in thread "main" java.util.ConcurrentModificationException
+       HashMap <String , String> userMap  = new HashMap <String , String>(); 
 
+       userMap.put("nninja@codingdojo.com", "Nancy Ninja");
+       userMap.put("ssamurai@codingdojo.com", "Sam Samurai");
+    //    String name = userMap.get("nninja@codingdojo.com");
+       Set<String> keys =  userMap.keySet();
+       for(String key : keys){
+        System.out.println(key);
+        System.out.println(userMap.get(key));
 
        }
    
-   
+        }
+        
     }
+
+
+       
+   
+   
+    
 
 
