@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Order {
     private String name;
     private boolean ready;
-    private ArrayList<Item> items;
+    private ArrayList<Item> items = new ArrayList<Item>();
 
     public Order(){
         this.name = "Guest";
@@ -46,7 +46,7 @@ public void addItem (Item item){
 }
 
 public String getStatusMessage(){
-    if (this.ready) {
+    if (ready) {
      return "Your order is ready";   
     } 
         return "Thank you for waiting. Your order will be ready soon.";
