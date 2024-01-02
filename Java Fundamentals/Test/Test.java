@@ -3,14 +3,11 @@
 // import java.util.Set;
 class Test {
     public static void main(String[] args) {
-        Testjava redVehicle = new Testjava(2,"red");
-        Testjava redVehicle2 = new Testjava();
-        String color = redVehicle.getColor();
-        String color2 = redVehicle2.getColor();
-        int number = redVehicle2.getNumberOfWheels()
-        System.out.println("The Vehicle color is: " + color);
-         System.out.println("The Vehicle color is: " + color2 + number);
-       
+      Testjava person1 = new Testjava("Tom", 33);
+      Testjava person2 = new Testjava("Jane", 23);
+      Testjava person3 = new Testjava("Sam", 29);
+     
+              Testjava.peopleCount();
        }
    
         }
