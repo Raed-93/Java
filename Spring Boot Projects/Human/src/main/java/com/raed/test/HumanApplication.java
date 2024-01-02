@@ -13,15 +13,15 @@ public class HumanApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HumanApplication.class, args);
 	}
-	@RequestMapping("/")
-	public String index () {
-		return "Hello Human";
-	}
-	
-	@RequestMapping("/test")
-	public String index(@RequestParam(value="q") String firstname ,@RequestParam(value="z") String lastname) {
-        return "You searched for: " + firstname +" " + lastname;
+	@RequestMapping()
+	public String indext(@RequestParam(value="name", required = false) String firstname) {
+        return "You searched for: " + firstname ;
     }
+	
+//	@RequestMapping("/")
+//	public String index(@RequestParam(value="name") String firstname ,@RequestParam(value="z") String lastname) {
+//        return "You searched for: " + firstname +" " + lastname;
+//    }
 	@RequestMapping("/raed")
 	public String raed(@RequestParam(value="q") String firstname ,@RequestParam(value="times") int times) {
       String x="";  
