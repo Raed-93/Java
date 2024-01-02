@@ -8,6 +8,9 @@ public class BankAccount {
     
         // CONSTRUCTOR
         // Be sure to increment the number of accounts
+        public BankAccount(){
+            accounts++;
+        }
     
         // GETTERS
         // for checking, savings, accounts, and totalMoney
