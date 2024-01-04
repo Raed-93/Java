@@ -15,9 +15,11 @@ pageEncoding="ISO-8859-1"%>
 <p>
         <c:out value="${name}"/>
     </p>
+    
     <p>
         <c:out value="${itemName}"/>
     </p>
+    
     <p>
         <c:out value="${price}"/>
     </p>
