@@ -1,18 +1,31 @@
+import java.io.PrintStream;
+import java.util.Scanner;
 public class BankTest {
-        public static void main(String[] args){
-            // Create 3 bank accounts
-    
-            // Deposit Test
-            // - deposit some money into each bank account's checking or savings account and display the balance each time
-            // - each deposit should increase the amount of totalMoney
-    
-            // Withdrawal Test
-            // - withdraw some money from each bank account's checking or savings account and display the remaining balance
-            // - each withdrawal should decrease the amount of totalMoney
-    
-            // Static Test (print the number of bank accounts and the totalMoney)
-    
-        }
-    }
-    
+    /**
+     * @param args
+     */
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
 
+  
+        BankAccount account1 = new BankAccount();
+       
+
+   
+        System.out.println("Deposit test:");
+        System.out.println(account1.deposit(300));
+      
+
+
+
+       
+        System.out.println("withdraw test:");
+        System.out.println(account1.withdraw(100));
+      
+        scanner.close();
+      
+        System.out.println(BankAccount.getTotalMoney());
+        
+
+    }
+}
