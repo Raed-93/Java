@@ -3,11 +3,19 @@
  */
 public class Mammal {
 
-    public static int energy;
-    // protected int energyBat = 300;
+    private int energy;
+
+    public int getEnergy(){
+        return energy;
+    }
+
+    public void setEnergy(int energy){
+        this.energy = energy;
+
+    }
 
    public static int displayEnergy(int energy){
     return energy;
-
    }
+   
 }
