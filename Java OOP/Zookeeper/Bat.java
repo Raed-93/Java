@@ -1,20 +1,17 @@
 public class Bat extends Mammal {
-    public void fly(){
-        System.out.println("The bat is airbor.");
-        energyBat -= 50;
-        displayEnergyBat();
+    public void fly(int energy){
+        energy -= 50;
+        System.out.println("The bat is airbor. "+ "\r" +   displayEnergy(energy));
     }
 
-    public void eatHumans(){
-        System.out.println("The bat's satisfactio.");
-        energyBat += 25;
-        displayEnergyBat();
+    public void eatHumans(int energy){
+        energy += 25;
+        System.out.println("The bat's satisfactio. " +"\r"+ displayEnergy(energy));
     }
 
-    public void attackTown(){
-        System.out.println("The bat's attack.");
-        energyBat -= 100;
-        displayEnergyBat();
+    public void attackTown(int energy){
+         energy -= 100;
+        System.out.println("The bat's attack." +"\r" + displayEnergy(energy));
     }
     
 }

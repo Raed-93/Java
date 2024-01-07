@@ -1,20 +1,21 @@
 public class Gorilla extends Mammal{
-    public void throwSomething(){
-        System.out.println("Gorilla has thrown something. ");
+    public void throwSomething(int energy){
          energy -= 5;
-         displayEnergy();
+        System.out.println("Gorilla has thrown something. " + "\r" + displayEnergy(energy));
+         
+      
     }  
 
-    public void eatBananas(){
+    public void eatBananas(int energy){
         energy += 10 ;
-        System.out.println("The gorilla's satisfaction. ");
-        displayEnergy();
+        System.out.println("The gorilla's satisfaction. " + "\r" +  displayEnergy(energy));
+       
     }
 
-    public void climb(){
+    public void climb(int energy){
         energy -= 10;
-        System.out.println("Gorilla has climbed a tree. ");
-        displayEnergy();
+        System.out.println("Gorilla has climbed a tree. " + "\r" +  displayEnergy(energy));
+       
     }
 
 

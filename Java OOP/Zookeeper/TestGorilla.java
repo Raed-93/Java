@@ -2,9 +2,9 @@ public class TestGorilla {
     public static void main(String[] args) {
         // Gorilla gorilla = new Gorilla();
         Bat bat =new Bat();
-        bat.setDisplayEnergy(300);
-        int batman = bat.getDisplayEnergy();
-        System.out.println(batman);
+        
+       
+        
         System.out.println("Zookeeper save the town.");
 
         // gorilla.throwSomething();
@@ -16,15 +16,18 @@ public class TestGorilla {
 
         // gorilla.climb();
 
-        bat.attackTown();
-        bat.attackTown();
-        bat.attackTown();
+        bat.attackTown(300);
+        bat.attackTown(300);
+        bat.attackTown(300);
 
-        bat.eatHumans();
-        bat.eatHumans();
+        
+        bat.eatHumans(300);
+        bat.eatHumans(300);
 
-        bat.fly();
-        bat.fly();
+        bat.fly(300);
+        bat.fly(300);
+
+         bat.attackTown(300);
 
 
 
