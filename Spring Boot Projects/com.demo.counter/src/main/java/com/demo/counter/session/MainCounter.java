@@ -1,13 +1,14 @@
 package com.demo.counter.session;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class MainCounter {
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String index(HttpSession session) {
 		
 		Integer count = 0;
@@ -23,7 +24,7 @@ public class MainCounter {
 		return "index.jsp";
 	}
 	
-	@RequestMapping("/counter")
+	@GetMapping("/counter")
 	public String counter() {
 		return "main.jsp";
 	}
