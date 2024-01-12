@@ -22,10 +22,10 @@
     <c:forEach var ="book" items="${books}">
          <tr>
          
-         <td><c:out value="${book.id}"/></td>
-         <td><c:out value="${book.title}"/></td>
-         <td><c:out value="${book.language}"/></td>
-         <td><c:out value="${book.numberOfPages}"/></td>
+         <td><a href="/books/${book.id}"> <c:out value="${book.id}"/> </a></td>
+         <td><a href="/books/{bookId}"> <c:out value="${book.title}"/> </a></td>
+         <td><a href="/books/{bookId}"> <c:out value="${book.language}"/> </a></td>
+         <td><a href="/books/{bookId}"> <c:out value="${book.numberOfPages}"/> </a></td>
  
          </tr>
          </c:forEach>
