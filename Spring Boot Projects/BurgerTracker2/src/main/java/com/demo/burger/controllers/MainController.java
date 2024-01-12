@@ -39,6 +39,8 @@ public class MainController {
 		return "redirect:/";
 	}
 	
+	
+	
 	@GetMapping("/eidt/{id}")
 	public String eidtBurger(@PathVariable("id") Long id, @ModelAttribute("burger") Burger burger, Model model) {
 		model.addAttribute("burger", burgerService.findBurger(id));
