@@ -29,7 +29,7 @@ public class MainController {
 	}
 	
 	@PostMapping("/addBurger")
-	public String index(@Valid @ModelAttribute("burger") Burger burger,BindingResult result, Model model) {
+	public String index(@Valid @ModelAttribute("burger") Burger burger, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			List<Burger> burgers = burgerService.allBurgers();
 			model.addAttribute("burgers" ,burgers);
