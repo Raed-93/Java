@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome:  <c:out value="${newUser}"/> </h1>
+<h1>Welcome:  <c:out value="${user.userName}"/> </h1>
 
  <a href="/logout">logout</a>
 </body>

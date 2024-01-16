@@ -14,30 +14,35 @@
 <h1>Register</h1>
 <div>
  <form:label path="userName">User Name: </form:label><br>
-        <form:errors path="userName"/>
         <form:input path="userName"/>
 </div>
 
 <div>
  <form:label path="email">Email: </form:label><br>
-        <form:errors path="email"/>
         <form:input path="email"/>
 </div>
 
 <div>
  <form:label path="password">Password: </form:label><br>
-        <form:errors path="password"/>
-        <form:input path="password"/>
+        <form:input type="password" path="password"/>
 </div>
 
 <div>
  <form:label path="confirm">Confirm PW</form:label><br>
         <form:errors path="confirm"/>
-        <form:textarea path="confirm"/>
+        <form:input  type="password" path="confirm"/>
 </div>
 
 <div>
  <input type="submit" value="Submit"/>
+</div>
+<br>
+<div>
+
+		<p><form:errors path="userName"/></p>
+		<p> <form:errors path="email"/></p>
+		<p><form:errors path="password"/></p>
+		<p><form:errors path="confirm"/></p>
 </div>
 </form:form>
 
@@ -54,7 +59,7 @@
 <div>
  <form:label path="password">Password: </form:label><br>
         <form:errors path="password"/>
-        <form:input path="password"/>
+        <form:input  type="password" path="password"/>
 </div>
 
 <div>
